@@ -1,4 +1,4 @@
-/*  05.040 - Photoresistor
+/*  05.040 - Photoresistor_EMA
  * 
  * This sketch shows you how read ambient light intensity with a photoresistor.
  * 
@@ -48,6 +48,8 @@
  */
 
 const byte PHOTO_GPIO = 39;
+
+// ExponentialMovingAverage myEMA= 0; 
 
 void setup() {  
   Serial.begin(115200);
